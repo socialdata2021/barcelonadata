@@ -1,0 +1,525 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
+        
+        <!-- title of site -->
+        <title>EU AVIATION - COVID-19</title>
+
+        <!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
+       
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+		<!--flat icon css-->
+		<link rel="stylesheet" href="assets/css/flaticon.css">
+
+		<!--animate.css-->
+        <link rel="stylesheet" href="assets/css/animate.css">
+
+        <!--owl.carousel.css-->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+	
+	<body>
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+		
+		<!-- top-area Start -->
+		<header class="top-area">
+			<div class="header-area">
+				<!-- Start Navigation -->
+			    <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
+
+			        <div class="container">
+
+			            <!-- Start Header Navigation -->
+			            <div class="navbar-header">
+			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+			                    <i class="fa fa-bars"></i>
+			                </button>
+			                <a class="navbar-brand" href="index.html">EU AVIATION - COVID-19</a>
+			            </div><!--/.navbar-header-->
+			            <!-- End Header Navigation -->
+
+			            <!-- Collect the nav links, forms, and other content for toggling -->
+			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+			                <li class="smooth-menu active"></li>
+			                    <li class="smooth-menu"><a href="network.html">NETWORK ANALYSIS</a></li>
+			                    <li class="smooth-menu"><a href="twitter.html">TWITTER ANALYSIS</a></li>
+			                </ul><!--/.nav -->
+			            </div><!-- /.navbar-collapse -->
+			        </div><!--/.container-->
+			    </nav><!--/nav-->
+			    <!-- End Navigation -->
+			</div><!--/.header-area-->
+
+		    <div class="clearfix"></div>
+
+		</header><!-- /.top-area-->
+		<!-- top-area End -->
+	
+		<!--welcome-hero start -->
+		<section id="welcome-hero-network" class="welcome-hero-network">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="header-text">
+							<h2><span>what</span> was the actual <br><span>reduction</span> of flights <span>?</span>   </h2>
+							<p>NETWORK ANALYSIS SHOWS THE MAGNITUDE OF THE DECREASE</p>
+							<a href="network.html" style="margin-right: 15px;" >NETWORK ANALYSIS</a>
+		                    <a href="twitter.html" style="margin-right: 15px;" >TWITTER ANALYSIS</a>
+						</div><!--/.header-text-->
+					</div><!--/.col-->
+				</div><!-- /.row-->
+			</div><!-- /.container-->
+
+		</section><!--/.welcome-hero-->
+		<!--welcome-hero end -->
+
+
+
+		<section id="intro" class="about">
+			<div class="section-heading text-center">
+				<h2>NETWORK ANALYSIS</h2>
+			</div>
+			<div class="container">
+				<div class="about-content">
+					<div class="row">						
+						<div class="single-about-txt">
+							<p>
+								The aim of this section is to have an overview of the impact of Covid-19 on the air traffic in Europe. For this, we analyze data from all the flights in Europe during the months January to October for 2019 and 2020. 
+								<br>
+								<br>
+								The first exploration on our dataset consists of observing the evolution over time of the daily number of flights. To get a smoother trend we calculate the rolling average for the last 7 days, see the red line in the plot.
+								<br>
+								<br>
+								In the plot below, it can be clearly observed a sharp decrease in mid-March 2020, when the first lock-downs in Europe occurred. In the worst period for air traffic, the reduction of flights accounted for roughly 90% less compared to a normal day.
+							</p>
+							<p style="text-align:center;">
+								<iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/count_flights_daily.html" height="600" width="1000"></iframe>
+							</p>
+							
+							<p>
+								For a better interpretation, the data of flights is represented as a network for each month. 
+								<br>
+								The analysis has been conducted top-to-bottom, therefore the first plot shows all the flights in Europe, whereas the next plots are focused on the selected airlines.
+								<br>
+								<br>
+								The nodes of the networks are the larger airports in Europe and the links represent all the flights between them. Note that the width and the color of the edges account for the number of flights and their airline, respectively.
+								<br>
+								<br>
+								To have a better understanding of the data we added some attributes to our nodes and edges. For the nodes, the size of the bubbles represents the degree of the nodes, i.e. connections of the airports. Furthermore, we decided to group the nodes in different communities, so the colors of the bubbles correspond to the nodes' communities. For the communities partition we used the best partition of community Louvain, which maximises the modularity using Louvain heuristices.
+								<br>
+								For the edges, we coloured the connections according to the 10 selected airlines, and its weight correspond to the number of flights for each connection.
+								<br>
+								<br>
+								By moving the slider the user can compare data from the same month of each year and visualize the difference. As expected, a big drop can be observed from the month of March again. 
+
+							</p>
+
+							<div class="row">
+								<h4 style="text-align:center;">
+									Total flights network
+								</h4>
+								<div style="float:left;">
+								    <div align="center">
+								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/2019_aviation_network.html" height="600" width="550"></iframe>
+								    </div>
+								    <div style="text-align:center;">
+								        Total flights 2019 plot
+								    </div>
+								</div>
+								<div style="float:right;">
+								    <div align="center">
+								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/2020_aviation_network.html" height="600" width="550"></iframe>
+								    </div>
+								    <div style="text-align:center;">
+								        Total flights 2020 plot
+								    </div>
+								</div>
+							</div>
+							<br>
+							<br>
+							<p>
+								After conducting a deeper analysis on the airports connections, we can conclude that the three most connected airports are:
+								<ul>
+									<li>Geneva Cointrin International Airport</li>
+									<li>London Luton Airport</li>
+									<li>Zürich Airport</li>
+								</ul>
+								<br>
+								Furthermore, for both years, the most connected airports are in Central Europe, as they are airports that have a higher number of transfer flights.
+								<br>
+								<br>
+								However, it should be highlighted that for the summer months (July and August) during 2020, the most connected airport was Palma de Mallorca. It has a clear relation to the holiday period of most of the countries in Europe.
+								<br>
+								<br>
+								Notice that the number of connections do not correspond to the number of flights. In our case, we consider a connection, a route between two airports operated for the same airline. For example, if we have a route from Copenhagen to Barcelona operated by Vueling, this is considered a unique link in the network and the number of Vueling flights doing this route would be represented as the weight of the edge, not as different links.
+							</p>
+
+							<p>
+								To go deeper in detail we analyze the affectation to 10 of the most important airlines in Europe: Air France, British Airways, Iberia, KLM, Lufthansa, Norwegian, Ryanair, Scandinavian Airlines, Easyjet and Vueling.
+								<br>
+								For this, we divide the main network into 10, which represent the air traffic for each airline.
+							</p>
+
+							<p id="airlines_list">
+								To see the plots for each airline follow the links or continue scrolling down:
+								<ul style="line-height:2.5;">
+								  <li><a href="#airfrance">Air France -  <img src="assets/images/airlines_logo/airfrance_logo.png" alt="airfrance" width="100" height="100"/></a>
+								  </li>
+								  <li><a href="#britishairways">British Airways -  <img src="assets/images/airlines_logo/britishairways_logo.png" alt="britishairways" width="120" height="120"/></a>
+								  </li>
+								  <li><a href="#lufthansa">Lufthansa -  <img src="assets/images/airlines_logo/lufthansa_logo.png" alt="lufthansa" width="100" height="100"/></a>
+								  </li>
+								  <li><a href="#iberia">Iberia -  <img src="assets/images/airlines_logo/iberia_logo.png" alt="iberia" width="100" height="100"/></a>
+								  </li>
+								  <li><a href="#klm">KLM -  <img src="assets/images/airlines_logo/klm_logo.png" alt="klm" width="40" height="40"/></a>
+								  </li>
+								  <li><a href="#norwegian">Norwegian -   <img src="assets/images/airlines_logo/norwegian_logo.png" alt="norwegian" width="100" height="100"/></a>
+								  </li>
+								  <li><a href="#ryanair">Ryanair -   <img src="assets/images/airlines_logo/ryanair_logo.png" alt="ryanair" width="100" height="100"/></a>
+								  </li>
+								  <li><a href="#easyjet">Easyjet -   <img src="assets/images/airlines_logo/easyjet_logo.png" alt="easyjet" width="100" height="100"/></a>
+								  </li>
+								  <li><a href="#SAS">SAS -  <img src="assets/images/airlines_logo/sas_logo.png" alt="SAS" width="60" height="60"/></a>
+								  </li>
+								  <li><a href="#vueling">Vueling - <img src="assets/images/airlines_logo/vueling_logo.svg" alt="vueling" width="100" height="100"/></a>
+								  </li>
+								</ul>
+							</p>
+
+							<div id="airfrance" class="row">
+								<h4 style="text-align:center;">
+									Air France
+								</h4>
+								<div style="float:left;">
+								    <div align="center">
+								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/airlines_by_month/AFR_2019.html" height="600" width="550"></iframe>
+								    </div>
+								    <div style="text-align:center;">
+								        Air France 2019 plot
+								    </div>
+								</div>
+								<div style="float:right;">
+								    <div align="center">
+								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/airlines_by_month/AFR_2020.html" height="600" width="550"></iframe>
+								    </div>
+								    <div style="text-align:center;">
+								        Air France 2020 plot
+								    </div>
+								</div>
+								<p style="text-align:center;">
+									<a href="#airlines_list">Go back to airlines list</a>
+								</p>
+							</div>
+
+							<div id="britishairways" class="row">
+								<br>
+								<br>
+								<h4 style="text-align:center;">
+									British Airways
+								</h4>
+								<div style="float:left;">
+								    <div align="center">
+								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/airlines_by_month/BAW_2019.html" height="600" width="550"></iframe>
+								    </div>
+								    <div style="text-align:center;">
+								        British Airways 2019 plot
+								    </div>
+								</div>
+								<div style="float:right;">
+								    <div align="center">
+								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/airlines_by_month/BAW_2020.html" height="600" width="550"></iframe>
+								    </div>
+								    <div style="text-align:center;">
+								        British Airways 2020 plot
+								    </div>
+								</div>
+								<p style="text-align:center;">
+									<a href="#airlines_list">Go back to airlines list</a>
+								</p>
+							</div>
+
+							<div id="lufthansa" class="row">
+								<br>
+								<br>
+								<h4 style="text-align:center;">
+									Lufthansa
+								</h4>
+								<div style="float:left;">
+								    <div align="center">
+								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/airlines_by_month/DLH_2019.html" height="600" width="550"></iframe>
+								    </div>
+								    <div style="text-align:center;">
+								        Lufthansa 2019 plot
+								    </div>
+								</div>
+								<div style="float:right;">
+								    <div align="center">
+								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/airlines_by_month/DLH_2020.html" height="600" width="550"></iframe>
+								    </div>
+								    <div style="text-align:center;">
+								        Lufthansa 2020 plot
+								    </div>
+								</div>
+								<p style="text-align:center;">
+									<a href="#airlines_list">Go back to airlines list</a>
+								</p>
+							</div>
+
+							<div id="iberia" class="row">
+								<br>
+								<br>
+								<h4 style="text-align:center;">
+									Iberia
+								</h4>
+								<div style="float:left;">
+								    <div align="center">
+								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/airlines_by_month/IBE_2019.html" height="600" width="550"></iframe>
+								    </div>
+								    <div style="text-align:center;">
+								        Iberia 2019 plot
+								    </div>
+								</div>
+								<div style="float:right;">
+								    <div align="center">
+								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/airlines_by_month/IBE_2020.html" height="600" width="550"></iframe>
+								    </div>
+								    <div style="text-align:center;">
+								        Iberia 2020 plot
+								    </div>
+								</div>
+								<p style="text-align:center;">
+									<a href="#airlines_list">Go back to airlines list</a>
+								</p>
+							</div>
+
+							<div id="klm" class="row">
+								<br>
+								<br>
+								<h4 style="text-align:center;">
+									KLM
+								</h4>
+								<div style="float:left;">
+								    <div align="center">
+								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/airlines_by_month/KLM_2019.html" height="600" width="550"></iframe>
+								    </div>
+								    <div style="text-align:center;">
+								        KLM 2019 plot
+								    </div>
+								</div>
+								<div style="float:right;">
+								    <div align="center">
+								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/airlines_by_month/KLM_2020.html" height="600" width="550"></iframe>
+								    </div>
+								    <div style="text-align:center;">
+								        KLM 2020 plot
+								    </div>
+								</div>
+								<p style="text-align:center;">
+									<a href="#airlines_list">Go back to airlines list</a>
+								</p>
+							</div>
+
+							<div id="norwegian" class="row">
+								<br>
+								<br>
+								<h4 style="text-align:center;">
+									Norwegian
+								</h4>
+								<div style="float:left;">
+								    <div align="center">
+								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/airlines_by_month/NAX_2019.html" height="600" width="550"></iframe>
+								    </div>
+								    <div style="text-align:center;">
+								        Norwegian 2019 plot
+								    </div>
+								</div>
+								<div style="float:right;">
+								    <div align="center">
+								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/airlines_by_month/NAX_2020.html" height="600" width="550"></iframe>
+								    </div>
+								    <div style="text-align:center;">
+								        Norwegian 2020 plot
+								    </div>
+								</div>
+								<p style="text-align:center;">
+									<a href="#airlines_list">Go back to airlines list</a>
+								</p>
+							</div>
+
+							<div id="ryanair" class="row">
+								<br>
+								<br>
+								<h4 style="text-align:center;">
+									Ryanair
+								</h4>
+								<div style="float:left;">
+								    <div align="center">
+								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/airlines_by_month/RYR_2019.html" height="600" width="550"></iframe>
+								    </div>
+								    <div style="text-align:center;">
+								        Ryanair 2019 plot
+								    </div>
+								</div>
+								<div style="float:right;">
+								    <div align="center">
+								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/airlines_by_month/RYR_2020.html" height="600" width="550"></iframe>
+								    </div>
+								    <div style="text-align:center;">
+								        Ryanair 2020 plot
+								    </div>
+								</div>
+								<p style="text-align:center;">
+									<a href="#airlines_list">Go back to airlines list</a>
+								</p>
+							</div>
+
+							<div id="easyjet" class="row">
+								<br>
+								<br>
+								<h4 style="text-align:center;">
+									Easyjet
+								</h4>
+								<div style="float:left;">
+								    <div align="center">
+								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/airlines_by_month/EZY_2019.html" height="600" width="550"></iframe>
+								    </div>
+								    <div style="text-align:center;">
+								        Easyjet 2019 plot
+								    </div>
+								</div>
+								<div style="float:right;">
+								    <div align="center">
+								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/airlines_by_month/EZY_2020.html" height="600" width="550"></iframe>
+								    </div>
+								    <div style="text-align:center;">
+								        Easyjet 2020 plot
+								    </div>
+								</div>
+								<p style="text-align:center;">
+									<a href="#airlines_list">Go back to airlines list</a>
+								</p>
+							</div>
+
+							<div id="SAS" class="row">
+								<br>
+								<br>
+								<h4 style="text-align:center;">
+									SAS
+								</h4>
+								<div style="float:left;">
+								    <div align="center">
+								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/airlines_by_month/SAS_2019.html" height="600" width="550"></iframe>
+								    </div>
+								    <div style="text-align:center;">
+								        SAS 2019 plot
+								    </div>
+								</div>
+								<div style="float:right;">
+								    <div align="center">
+								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/airlines_by_month/SAS_2020.html" height="600" width="550"></iframe>
+								    </div>
+								    <div style="text-align:center;">
+								        SAS 2020 plot
+								    </div>
+								</div>
+								<p style="text-align:center;">
+									<a href="#airlines_list">Go back to airlines list</a>
+								</p>
+							</div>
+
+							<div id="vueling" class="row">
+								<br>
+								<br>
+								<h4 style="text-align:center;">
+									Vueling
+								</h4>
+								<div style="float:left;">
+								    <div align="center">
+								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/airlines_by_month/VLG_2019.html" height="600" width="550"></iframe>
+								    </div>
+								    <div style="text-align:center;">
+								        Vueling 2019 plot
+								    </div>
+								</div>
+								<div style="float:right;">
+								    <div align="center">
+								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/airlines_by_month/VLG_2020.html" height="600" width="550"></iframe>
+								    </div>
+								    <div style="text-align:center;">
+								        Vueling 2020 plot
+								    </div>
+								</div>
+								<p style="text-align:center;">
+									<a href="#airlines_list">Go back to airlines list</a>
+								</p>
+							</div>
+
+							<br>
+							<br>
+							Now, let’s go to Twitter and analyze what the users have been tweeting about these airlines during this period of time. <a href="twitter.html">Go to Twitter page</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!--/.about-->
+		<!--about end -->
+
+
+	    <footer id="footer-copyright" class="footer-copyright">
+			<div class="container">
+				<div class="hm-footer-copyright text-center">
+					<p>
+						© Content developed by Arnau, Berta and Hector for the course Social graphs and interactions (02805) offered by the Technical University of Denmark. <br><br>Template designed and developed by <a href="https://www.themesine.com/">themesine</a>
+					</p><!--/p-->
+				</div><!--/.text-center-->
+			</div><!--/.container-->
+
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top"></i>
+				</div>
+				
+			</div><!--/.scroll-Top-->
+		</footer>
+		
+        
+    </body>
+	
+</html>
