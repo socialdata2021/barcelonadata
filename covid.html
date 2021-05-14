@@ -100,7 +100,7 @@
 				<div class="row">
 					<div class="col-md-12 text-center">
 						<div class="header-text">
-							<h2><span>what</span> was the actual <br><span>reduction</span> of flights <span>?</span>   </h2>
+							<h2><span>How</span> did the <br><span>covid pandemic</span> impact the city <span>?</span>   </h2>
 							<a href="housing.html" style="margin-right: 15px;" >HOUSING</a>
 		                    <a href="social.html" style="margin-right: 15px;" >SOCIAL</a>
 							<a href="environmental.html" style="margin-right: 15px;" >ENVIRONMENTAL</a>
@@ -124,39 +124,48 @@
 					<div class="row">						
 						<div class="single-about-txt">
 							<p>
-								In this section we will analyze the covid-19 impact to the city.
+								The worldwide covid pandemic has impacted the city of Barcelona, not only in the health level but also in others, such as the socio-economic, housing and the air quality.
 								<br>
 								<br>
-								Write more content ....
+								This page shows the covid numbers in the city, and analyzes it again for neighbourhoods and districts. Which has been the most affected neighbourhoods in terms of accumulated covid cases? Does it have something to do with the socio-economic level? Is the number of covid cases related to the density of population? 
 								<br>
 								<br>
-								Write more content ....
-							</p>
-							<p style="text-align:center;">
-								<iframe scrolling="no" style="border:none;" seamless="seamless" src="https://chart-studio.plotly.com/~socialdata2021/29" height="600" width="1000"></iframe>
+								From the start of the pandemic until April 2021, Barcelona registered 118.929 covid cases. Let's analyze how this has been distributed over the different districts and neighbourhoods. The next visualization shows the covid rate (% of accumulated covid cases over the total population) for each district and neighbourhood.
 							</p>
 
-							<p style="text-align:center;">
-								<iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/covid_rate_map2.html" height="600" width="1000"></iframe>
-							</p>
+							<div class="row">
+								<div style="float:left;">
+								    <div align="center">
+								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="https://chart-studio.plotly.com/~socialdata2021/29" height="600" width="550"></iframe>
+								    </div>
+								</div>
+								<div style="float:right;">
+								    <div align="center">
+								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/covid_rate_map2.html" height="600" width="550"></iframe>
+								    </div>
+								</div>
+							</div>
 							
 							<p>
-								Write more content ....
+								It is interesting to see how the more affected neighbourhoods are the ones with a lower socio-economic level. This could have been expected, as in the humblest neighbourhoods people have less resources and probably they have jobs that didn+t allow them to work from home, so they had to keep going to work and this increases the risk of getting infected. Furthermore, in this neighbourhood, the number of people that live in the apartments is higher and the size of the apartments is lower, so this means that they live with more people, thus the probability of being infected would be higher as well.
 								<br>
-								Write more content ....
+								The next goes deeper into detail and shows the relation between covid rate and density of population, where the size of the bubbles represents the number of inhabitants.
 								<br>
 								<br>
-								We will also analyze the covid rate against the density of population.
 							</p>
 
 							<p style="text-align:center;">
-								<iframe scrolling="no" style="border:none;" seamless="seamless" src="https://chart-studio.plotly.com/~socialdata2021/31" height="600" width="1000"></iframe>
+								<iframe scrolling="no" style="border:none;" seamless="seamless" src="https://chart-studio.plotly.com/~socialdata2021/69" height="600" width="1000"></iframe>
 							</p>
 
-							<br>
-							<br>
-
-							Write more content ....
+							<p>
+								One could think that as more dense is a neighbourhood, the higher the possibility of being in contact with more people and thus getting infected. However, in this case, the results are quite unexpected, as the visualizations show that the covid rate is not linearly directed to the density of population. 
+								<br>
+								<br>
+								To better analyze this data, the Pearson correlation coefficient has been considered. It measures the linear correlation between two sets of data (from 0 to 1). It resulted in a value of -0,014 for the neighbourhoods distribution and 0,249 for the districts. These values are insignificant so this is why it can be inferred that the covid rate is not linearly directed to the density of population. Research about the spread of the virus points out different variables as responsibles of the covid cases increase, such as social connectedness, economic, cultural, financial conditions and meteorological characteristics.
+								<br>
+								<br>
+							</p>
 						</div>
 					</div>
 				</div>
