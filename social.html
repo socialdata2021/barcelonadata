@@ -10,13 +10,13 @@
 
         <!--font-family-->
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
-        
+
         <!-- title of site -->
         <title>BARCELONA DATA</title>
 
         <!-- For favicon png -->
 		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
-       
+
         <!--font-awesome.min.css-->
         <link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
@@ -29,34 +29,34 @@
         <!--owl.carousel.css-->
         <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-		
+
         <!--bootstrap.min.css-->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-		
+
 		<!-- bootsnav -->
-		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
-        
+		<link rel="stylesheet" href="assets/css/bootsnav.css" >
+
         <!--style.css-->
         <link rel="stylesheet" href="assets/css/style.css">
-        
+
         <!--responsive.css-->
         <link rel="stylesheet" href="assets/css/responsive.css">
-        
+
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		
+
         <!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 
     </head>
-	
+
 	<body>
 		<!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-		
+
 		<!-- top-area Start -->
 		<header class="top-area">
 			<div class="header-area">
@@ -93,9 +93,9 @@
 
 		</header><!-- /.top-area-->
 		<!-- top-area End -->
-	
+
 		<!--welcome-hero start -->
-		<section id="welcome-hero-network" class="welcome-hero-network">
+		<section id="welcome-hero-social" class="welcome-hero-social">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 text-center">
@@ -121,21 +121,152 @@
 			</div>
 			<div class="container">
 				<div class="about-content">
-					<div class="row">						
+					<div class="row">
 						<div class="single-about-txt">
 							<p>
-								The aim of this section is to have an overview of social data in Barcelona, such as Education, Age, Population density, Family income, etc...
+								In this section is described the socio-economic situation in different Districts and Neighborhoods of the city of Barcelona. The analysis focused on:
+								<ul>
+								  <li>Unemployment rate (link)</li>
+								  <li>Age distribution of the population (link)</li>
+								  <li>Average income distribution (link)</li>
+									<li>Schools’ location (link)</li>
+								</ul>
+							  <br></br>
+								The comparative analysis of these fields can be very useful for people in the process of moving to Barcelona, since it allows to understand which area fits better with the personal lifestyle.
 								<br>
 								<br>
-								Write more content ....
+								<br></br>
+								<h3>UNEMPLOYMENT</h3>
 								<br>
+								The analysis of the Unemployment rate registered in Barcelona in the past ten years can help to understand the economic situation of the city, and it can give a first overview about the situation of the worker living in Barcelona.
+								The average unemployment rate is quite useful in order to understand the behaviour of the labour market, and to find out to what extent is worth it to move and live in Barcelona. The plot shows that in the past decade the maximum level of unemployment had been registered in 2013, when the value reached about 11%. Overall, the pattern followed a decreasing trend until 2019, however the effects of COVID-19 slightly increased the levels in 2020 and in the first month of 2021 at a maximum level of 	9.31%. The values reached in 2021 are the highest since 2015, and probably the the spread of the virus will have consequences also in the future years, and the increment could be confirmed.
+								</br>
+								<br></br>
+								<!-- <iframe align="center" scrolling="no" style="border:none;" seamless="seamless" src="plots/avg_unemp_year.html" height="1000" width="1000"></iframe> -->
+								<table width="110%" align="center">
+									<tbody>
+									<tr><td width=40% align="left" valign="middle">The average unemployment across the ten years’ time span gives a better understanding of the unemployment situation district by district. From this plot it can be easily seen which are the least neighborhoods in terms of employment.</td><td width=40% align="center" valign="middle"><iframe align="right" scrolling="no" style="border:none;" seamless="seamless" src="plots/avg_unemp_year.html" height = 600 width = 600></iframe></td></tr>
+									</tbody>
+								</table>
+								<br></br>
+								<br></br>
+								<br></br>
 								<br>
-								Write more content ....
+								The average unemployment across the ten years’ time span gives a better understanding of the unemployment situation district by district. From this plot it can be easily seen which are the least neighborhoods in terms of employment.
+								</br>
+								<br></br>
+								<br></br>
+								<br></br>
+								<table width="100%" align="center">
+									<tbody>
+									<tr><td width=40% align="left" valign="baseline"><iframe align="center" valign="baseline" scrolling="no" style="border:none;" seamless="seamless" src="plots/avg_unemplo_neigh.html" height = 600 width = 605></iframe></td>
+											<td width=40% align="left" valign="top">
+																		<ul>
+																		  <li>“Nou Barris”, “Sant Andreu”, “Ciutat Vella” and “Saints-Montjuic” are the ones with the highest unemployment rate.</li>
+																		  <li>Sarrià-Saint Gervasi” and “Les Corts” have by far the lowest levels of unemployment rate.</li>
+																		</ul>
+											</td>
+									</tr>
+									</tbody>
+								</table>
+
+								<br></br>
+								<br></br>
+
+								<br>
+									The other districts have as average unemployment rate values between 6 and 8%: in these districts there are the neighbors where the most middle-class families reside.
+								</br>
+
+								<iframe align="center" valign="middle" scrolling="no" style="border:none;" seamless="seamless" src="plots/bar_race.html" height = 1000 width = 1000></iframe>
+
+								<br>
+									The evolution of the unemployment rate over the 10-years time span shows that even though the average level of unemployment changed across the years between 2012 and 2021, there were not significant changes in the rank of the most unemployed districts: the proportion of unemployment among districts remained the same across the past decade. “Ciutat Vella” was the only one district to slide from the second to the fourth position and the other way around.
+								</br>
+
+								<br></br>
+								<br></br>
+								<br></br>
+								<table width="100%" align="center">
+									<tbody>
+									<tr><td width=40% align="left" valign="middle"><iframe align="center" valign="middle" scrolling="no" style="border:none;" seamless="seamless" src="plots/unemployment_rate_map.html" height = 600 width = 605></iframe></td>
+											<td width=40% align="left" valign="middle">
+												The same conclusions can be visualized the map. Geographically, the northern part of Barcelona and the area across the harbor have the highest level of unemployed citizens. On the other hand, the south-west side of the city registers the lowest levels.
+											</td>
+									</tr>
+									</tbody>
+								</table>
+
+								<br></br>
+								<br></br>
+								<br></br>
+								<table width="100%" align="center">
+									<tbody>
+									<tr>
+											<td width=40% align="left" valign="middle">
+												Comparing this level with the real estate market, the population density and the income data, it is possible to find out which are the most and the least expensive areas in the city, and eventually it is possible to find out which is the best place to go to live, based on the individual needs.
+											</td>
+											<td width=40% align="left" valign="middle"><iframe align="center" valign="middle" scrolling="no" style="border:none;" seamless="seamless" src="plots/unemployment_rate_map_bydate.html" height = 600 width = 605></iframe></td>
+									</tr>
+									</tbody>
+								</table>
+
+								<h3>AGE DISTRIBUTION</h3>
+
+								<br>The knowledge about the age distribution across the city allows those who are moving to Barcelona to find out which is the best place to stay, according to their needs: families would move to places where children can meet peers’ kids, students would rather live in areas where gatherings of young people take place, while retired couples might prefer quieter areas in of the city.</br>
+								<br>Note that the data about the age distribution have not been scaled. Therefore, the plots show the absolute value of the population and not the proportion of each group. This is done because when deciding where to move, it is interesting not only to know the proportion of people belonging to a certain group of age range, but the total number of people.</br>
+								<br>Sliding the cursor in the bar chart on the side is possible to visualize how the population is distributed in each neighborhood, based on the ages.</br>
+
+								<iframe align="center" valign="middle" scrolling="no" style="border:none;" seamless="seamless" src="plots/pop_age.html" height = 1000 width = 1100></iframe>
+
+								<br></br>
+								<table width="100%" align="center">
+									<tbody>
+									<tr><td width=40% align="left" valign="middle"><iframe align="center" valign="middle" scrolling="no" style="border:none;" seamless="seamless" src="plots/map_age.html" height = 600 width = 605></iframe></td>
+											<td width=40% align="left" valign="middle">
+												The map gives a better understanding of the distribution, and it helps to geographically visualize where the people are located, depending on their age. Moreover, it is also possible to have an overview about the total amount of people living in each neighbourhood.
+											</td>
+									</tr>
+									</tbody>
+								</table>
+
+								<br>The map shows that the group with the largest amount of people is the “40-64”, and in particular that the most of the people belonging to this group lives in the west side of the city (Vallvidrera, Sain-Gervasi - La Bona nova, Horta, Trinitad Nova, Pedralbes … ). Comparing the data of unemployment and income (link) it can be seen that these are also the richest neighborhoods of the city. However, also the humblest neighbors located in the north have high numbers of people between 40 and 64 (La trinitat Nova, La trinitat Vella, Les Roquetes, … ).</br>
+
+								<br>Data about kids (0-14) are useful for families that are deciding to move. The highest number of kids is located in the city center, specially La Dreta de l’Example, Pedralbes, La Maternitat I Sant Ramon: a family moving to Barcelona should consider this areas as their location, also taking into account the situation of the Schools (link) in the area. The distribution of people within the group 25-39 has some similarities with the one above. This confirms that young families are mainly located in the city-center.</br>
+								<br></br>
+								<br></br>
+								<br></br>
+
+								<h1>INCOME</h1>
+
+								<br>The average income by Neighbourhood and district gives an idea on the cost of the life of each neighbor and the target of people living there. Overall, the plot shows that the districts with the highest income levels are:</br>
+
+								<br>
+								<ul>
+									<li> Sarrià-Saint Gervasi </li>
+									<li> Les Corts </li>
+									<li> Eixample </li>
+								</ul>
+								</br>
+								<br></br>
+								<br>The neighbor with the highest average income is Les Tres torres. The richest people in Barcelona live here (Rich entrepreneurs, owners of big companies or banks, … ).; The neighbor with the second highest income level is Pedralbes, which is located in the district of Les Corts. This is the neighbor where famous people live, such as football players and tv stars. The life in these areas is very expensive compared to the rest of Barcelona, and this is confirmed also by the real estate analysis (link).</br>
+								<br>On the other hand, the districts with the lowest income are Ciutat Vella and Nou Barris, which are in the suburbs.</br>
+								<br>The remaining areas are those where the average people live. There are slight differences between  each of these, but in general the average income fell inside the range 25k and 40k euros per year, depending on the district.</br>
+								<br></br>
+								<iframe align="center" valign="middle" scrolling="no" style="border:none;" seamless="seamless" src="plots/income_aneighbourhood.html" height = 1000 width = 1100></iframe>
+
+								<br>The Bubble plot displayed shows the distribution of the income based on the neighbourhood and in relation to the density. In particular the places with highest income are those with the lowest density. Apart from some outliers, such as La Marina del Prat Vermell, La clota and Torre Barò, the more a neighbor is densely inhabited, the darker is the bubble in the plot, that is the lowest is the annual income.</br>
+
+								<iframe align="center" valign="middle" scrolling="no" style="border:none;" seamless="seamless" src="plots/barri_dens_income.html" height = 1000 width = 1100></iframe>
+
+
+
+
+
 							</p>
 							<p style="text-align:center;">
-								<iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/yearly_updates.html" height="600" width="1000"></iframe>
+								<!-- <iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/yearly_updates.html" height="600" width="1000"></iframe> -->
 							</p>
-							
+
 							<p>
 								Write more content ....
 								<br>
@@ -151,7 +282,7 @@
 								</h4>
 								<div style="float:left;">
 								    <div align="center">
-								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/2019_aviation_network.html" height="600" width="550"></iframe>
+								        <!-- <iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/2019_aviation_network.html" height="600" width="550"></iframe> -->
 								    </div>
 								    <div style="text-align:center;">
 								        Plot1
@@ -159,7 +290,7 @@
 								</div>
 								<div style="float:right;">
 								    <div align="center">
-								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/2020_aviation_network.html" height="600" width="550"></iframe>
+								        <!-- <iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/2020_aviation_network.html" height="600" width="550"></iframe> -->
 								    </div>
 								    <div style="text-align:center;">
 								        Plot2
@@ -191,11 +322,11 @@
 				<div class="return-to-top">
 					<i class="fa fa-angle-up " id="scroll-top"></i>
 				</div>
-				
+
 			</div><!--/.scroll-Top-->
 		</footer>
-		
-        
+
+
     </body>
-	
+
 </html>
