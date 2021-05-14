@@ -100,7 +100,7 @@
 				<div class="row">
 					<div class="col-md-12 text-center">
 						<div class="header-text">
-							<h2><span>what</span> was the actual <br><span>reduction</span> of flights <span>?</span>   </h2>
+							<h2><span>How</span> is the <br><span>air quality</span> in the city <span>?</span>   </h2>
 							<a href="housing.html" style="margin-right: 15px;" >HOUSING</a>
 		                    <a href="social.html" style="margin-right: 15px;" >SOCIAL</a>
 							<a href="environmental.html" style="margin-right: 15px;" >ENVIRONMENTAL</a>
@@ -117,71 +117,152 @@
 
 		<section id="intro" class="about">
 			<div class="section-heading text-center">
-				<h2>SOCIAL ANALYSIS</h2>
+				<h2>ENVIRONMENTAL ANALYSIS</h2>
 			</div>
 			<div class="container">
 				<div class="about-content">
 					<div class="row">						
 						<div class="single-about-txt">
 							<p>
-								The aim of this section is to have an overview of social data in Barcelona, such as Education, Age, Population density, Family income, etc...
+								Recently, the Barcelona City Council presented the <i>Government Measure: Programme of measures to combat atmospheric pollution</i>, with the aim to fulfil the World Health Organisation recommendations and the commitment established with the European Union to reduce pollution indices that exceed the threshold established by the European regulations, and thus protect people's health. 
 								<br>
 								<br>
-								Write more content ....
+								The Programme includes 25 structural measures specifically to combat high pollution episodes and 58 actions in fields such as the urban model, mobility, large infrastructure, health and others.
 								<br>
 								<br>
-								Write more content ....
-							</p>
-							<p style="text-align:center;">
-								<iframe scrolling="no" style="border:none;" seamless="seamless" src="https://chart-studio.plotly.com/~socialdata2021/35" height="600" width="1000"></iframe>
 							</p>
 
-							<p style="text-align:center;">
-								<iframe scrolling="no" style="border:none;" seamless="seamless" src="https://chart-studio.plotly.com/~socialdata2021/37" height="600" width="1000"></iframe>
-							</p>
-
-							<p style="text-align:center;">
-								<iframe scrolling="no" style="border:none;" seamless="seamless" src="https://chart-studio.plotly.com/~socialdata2021/39" height="600" width="1000"></iframe>
-							</p>
-
-							<p style="text-align:center;">
-								<iframe scrolling="no" style="border:none;" seamless="seamless" src="https://chart-studio.plotly.com/~socialdata2021/41" height="600" width="1000"></iframe>
-							</p>
-							
-							<p>
-								Write more content ....
-								<br>
-								Write more content ....
-								<br>
-								<br>
-								Write more content ....
-							</p>
 
 							<div class="row">
-								<h4 style="text-align:center;">
-									Plots in rows
-								</h4>
 								<div style="float:left;">
 								    <div align="center">
-								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/2019_aviation_network.html" height="600" width="550"></iframe>
-								    </div>
-								    <div style="text-align:center;">
-								        Plot1
+								        In order to have this control over pollution and register measures of air quality in the city, Barcelona City Council set up seven different stations to measure the air quality. These stations measure different pollutants, but this analysis will focus on the four main ones:
+										<br>
+										<br>
+										<ol>
+											<li>PM10</li>
+											<li>NO2</li>
+											<li>SO2</li>
+											<li>CO</li>
+										</ol>
 								    </div>
 								</div>
 								<div style="float:right;">
 								    <div align="center">
-								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/2020_aviation_network.html" height="600" width="550"></iframe>
-								    </div>
-								    <div style="text-align:center;">
-								        Plot2
+								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="plots/air_quality_stations_map.html" height="600" width="550"></iframe>
 								    </div>
 								</div>
 							</div>
-							<br>
-							<br>
 
-							Write more content ....
+							<p>
+								As mentioned above, the analysis will take into account the measures of each pollutant for each of the stations where this was measured on a daily basis during 2020. The measurements are done every hour of the day, but the analysis will consider the daily average of the measurement for every hour. 
+								<br>
+								<br>
+								Notice that not all the stations measure the same pollutants. For this reason, and because the pollutants have different unit measures, come from different activities and thus have different range values of measures, they are represented in different plots. In the plots, the different steps of the slider represent the measurement stations where the data was gathered. 
+								<br>
+								<br>
+								The first pollutants that are analyzed are PM10 and NO2. They are the most common air pollutants in Barcelona, and the ones observed when declaring pollution episodes in the city.
+								<br>
+								<br>
+							</p>
+
+							<div class="row">
+								<div style="float:left;">
+								    <div align="center">
+								        <b>PM10</b>: The pollutant PM10 consists of small particles that float in the air and can easily penetrate the human body, from the respiratory system they can enter our blood vessels and stay there.
+										<br>
+										<br>
+										The 71% of this pollutant comes from outside the municipality (regional contribution). And 21% comes from traffic.
+										<br>
+										<br>
+								    </div>
+								</div>
+								<div style="float:right;">
+								    <div align="center">
+								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="https://chart-studio.plotly.com/~socialdata2021/35" height="600" width="550"></iframe>
+								    </div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div style="float:left;">
+								    <div align="center">
+								        <b>NO2</b>: Nitrogen dioxide is an irritant gas that mainly comes from the combustion of motor vehicles, heating systems and maritime transport.
+										<br>
+										<br>
+										Around 60% comes from traffic and 8% comes from emissions in the Port.
+										<br>
+										<br>
+								    </div>
+								</div>
+								<div style="float:right;">
+								    <div align="center">
+								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="https://chart-studio.plotly.com/~socialdata2021/37" height="600" width="550"></iframe>
+								    </div>
+								</div>
+							</div>
+
+							<p>
+								Given that the data is from 2020, the plots clearly show the impact of the coronavirus pandemic on the air quality of the city. As expected, the pollution decreased in March 2020, when the lockdown started. On the 14th of March, the Spanish government decreed a state of emergency and total lockdown to stop the spread of the virus.
+								<br>
+								<br>
+								For the PM10 particles, as the 71% comes from outside the municipality the data cannot be clearly related to the activity in the city. 
+								<br>
+								<br>
+								Notice, that the decrease is bigger for the NO2 gas, which accounts for the pollution provided by traffic. It is interesting to see how there is a high peak on the 12th of March, which is followed by a low peak on the 16th of March. Between these days, the lockdown started, so this phenomena is clearly related to the high mobility of the two days before the government decreed the state of emergency. People didn+t know what was going to happen, so people not from Barcelona or living outside the city were going back to their hometowns. Whereas after the 14th of March, the lockdown was already effective so the traffic significantly decreased.
+								<br>
+								<br>
+								After these dates, the pollution kept lower than normal until mid May, when the de-escalation phase started. 
+								<br>
+								<br>
+								It is also worth mentioning that, in general, the pollution levels are lower for the station situated in the residential neighbourhood of Pedralbes, and higher in the more centric neighbourhoods such as la Nova Esquerra de l+Eixample and el Poblenou. 
+								<br>
+								<br>
+								Next, the pollutants SO2 and CO are analyzed:
+							</p>
+
+							<div class="row">
+								<div style="float:left;">
+								    <div align="center">
+								        <b>SO2</b>: Sulphur dioxide is a gas that in combination with water and oxygen, it forms acid rain. It is mostly produced by power stations and other industrial activities. 
+										<br>
+										<br>
+								    </div>
+								</div>
+								<div style="float:right;">
+								    <div align="center">
+								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="https://chart-studio.plotly.com/~socialdata2021/39" height="600" width="550"></iframe>
+								    </div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div style="float:left;">
+								    <div align="center">
+								        <b>CO</b>: Carbon monoxide is a gas which is undetectable without measuring apparatus. It is produced by vehicle exhausts and to a lesser extent, by heating.
+										<br>
+										<br>
+								    </div>
+								</div>
+								<div style="float:right;">
+								    <div align="center">
+								        <iframe scrolling="no" style="border:none;" seamless="seamless" src="https://chart-studio.plotly.com/~socialdata2021/41" height="600" width="550"></iframe>
+								    </div>
+								</div>
+							</div>
+
+							<p>
+								Observing the visualizations above, it can be concluded that both contaminants decreased from March in most of the stations, this can be related to the decrease of industrial activities in the city during the lockdown. 
+								<br>
+								<br>
+								Notice that for SO2, the measures in Pedralbes are lower than the rest of the station. This can be related to the fact that in this neighbourhood there aren+t industrial activities, as it is a very residential area. 
+								<br>
+								<br>
+								From CO2, which also comes from traffic, it can be inferred that there is also a decrease from March because of the lockdown. 
+								<br>
+								<br>
+							</p>
+
 						</div>
 					</div>
 				</div>
